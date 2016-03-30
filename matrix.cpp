@@ -95,10 +95,8 @@ bool Matrix::isempty()
 	else false;
 }
 
-void Matrix::create_matrix(int n, int m)
+void Matrix::create_matrix(int n, int m): count_row(n), count_column(m)
 {
-	count_row = n;
-	count_column = m;
 	array = new int*[count_row];
 
 	for (int i = 0; i < count_row; ++i)
